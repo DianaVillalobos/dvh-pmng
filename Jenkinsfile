@@ -25,7 +25,7 @@ pipeline{
                     
                     for IMAGE in $IMAGES; do
 
-                        echo"Eliminando imagen $IMAGE"
+                        echo "Eliminando imagen $IMAGE"
 
                         docker rmi "$IMAGE" || true
 
