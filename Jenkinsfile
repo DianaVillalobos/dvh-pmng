@@ -38,7 +38,7 @@ pipeline{
             steps{
                 echo 'Creando nuevas imagenes..'
                 sh '''
-                    docker compose -p ${COMPOSE_PROJECT_NAME} -f ${COMPOSE_FILE} --env-file ${ENV_FILE} build --no cache
+                    docker compose -p ${COMPOSE_PROJECT_NAME} -f ${COMPOSE_FILE} --env-file ${ENV_FILE} build --no-cache
                 
                 '''
             }
